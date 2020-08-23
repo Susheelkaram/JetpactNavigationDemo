@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:menuCategory="secondary">
+        <item
+            android:id="@id/homeFragment"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Home" />
+
+        <item
+            android:id="@id/oneFragment"
+            android:title="Page 1"
+            android:icon="@drawable/ic_baseline_plus_one_24"/>
+
+        <item
+            android:id="@id/twoFragment"
+            android:title="Page 2"
+            android:icon="@drawable/ic_baseline_exposure_plus_2_24"></item>
+        <item
+            android:id="@id/levelTwoFragment"
+            android:title="Level 2"
+            android:icon="@drawable/ic_baseline_filter_2_24"></item>
+
+    </group>
+</menu>

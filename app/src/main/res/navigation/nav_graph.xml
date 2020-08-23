@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.susheelkaram.jetpacknavigationexample.ui.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/actionOneFragment"
+            app:destination="@id/oneFragment"/>
+        <action
+            android:id="@+id/actionTwoFragment"
+            app:destination="@id/twoFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/oneFragment"
+        android:name="com.susheelkaram.jetpacknavigationexample.ui.OneFragment"
+        android:label="One Fragment"
+        tools:layout="@layout/fragment_one">
+
+        <action
+            android:id="@+id/action_oneFragment_to_levelTwoFragment"
+            app:destination="@id/levelTwoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/twoFragment"
+        android:name="com.susheelkaram.jetpacknavigationexample.ui.TwoFragment"
+        android:label="Two Fragment"
+        tools:layout="@layout/fragment_two" />
+    <fragment
+        android:id="@+id/levelTwoFragment"
+        android:name="com.susheelkaram.jetpacknavigationexample.ui.LevelTwoFragment"
+        android:label="Level 2 Fragment"
+        tools:layout="@layout/fragment_level_two" />
+</navigation>
